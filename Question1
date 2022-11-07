@@ -1,0 +1,17 @@
+Question 1: Write a bash script that collects two numbers from the user and then prints a message if these two numbers are smaller or greater than 100.
+
+     #! /usr/bin/bash
+     echo "please enter first number: "
+     read  num1
+     echo "please enter second number: "
+     read  num2
+     sum=$((num1 + num2))
+     if [ $sum -lt 100 ]
+     then
+            echo "Sum is Less than 100"
+     elif [ $sum -gt 100 ]
+     then
+            echo "Sum is more than 100"
+     else
+            echo "Sum Equals 100"
+     fi
