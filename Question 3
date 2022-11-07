@@ -1,0 +1,10 @@
+ #! /usr/bin/bash
+ echo -n "please enter directoy path: "
+ read path 
+ if [[ -z $path ]]
+ then
+      echo "input is incorrect!"
+ else
+      echo "The largest 10 files in this path are: "
+      find $path -type f | du -a | sort -rh | head -10
+ fi
