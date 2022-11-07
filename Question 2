@@ -1,0 +1,5 @@
+    #! /usr/bin/bash
+    echo "please enter the temperature in Fahrenheit: "
+    read temf
+    temc=$((($temf-32)*5/9))
+    echo "$temf = $temc"
